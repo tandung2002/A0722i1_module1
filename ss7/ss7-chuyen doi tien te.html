@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="text" id="amount_money"></td>
+            <td><select id="currency_in" value="USD" style="width: 200px">
+                <option>USD</option>
+                <option>VND</option>
+            </select></td>
+            <td>
+                <select id="currency_out" value="VND" style="width: 200px">
+                    <option>VND</option>
+                    <option>USD</option>
+                </select>
+            </td>
+            <td>
+                <input type="button" onclick="convert_currency()" id="convert" value="Convert"
+                       style="width: 100px; background-color: blueviolet;color: #dddddd">
+            </td>
+            <td style="width: 200px"><div id="showResult"></div></td>
+        </tr>
+    </table>
+</form>
+<script>
+    function convert_currency(){
+        let money_in = parseInt(document.getElementById("amount_money").value);
+        let currency_in = document.getElementById("currency_in").value;
+        let currency_out = document.getElementById("currency_out").value;
+        if (currency_in==currency_out){
+            document.getElementById("showResult").innerHTML= money_in +" "+ currency_out;
+        }
+        if (currency_in=="USD"&&currency_out=="VND"){
+            let money_out = money_in*24000;
+            document.getElementById("showResult").innerHTML = money_out+" "+ currency_out;
+        }
+        if (currency_in=="VND"&&currency_out=="USD"){
+            let money_out = money_in/24000;
+            document.getElementById("showResult").innerHTML = money_out+" "+currency_out
+        }
+    }
+</script>
+
+</body>
+</html>

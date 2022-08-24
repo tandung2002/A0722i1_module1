@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x;
+    let y;
+    let z;
+    let diemtrungbinh;
+    let tong3mon;
+
+    x=prompt("Nhap vao diem so mon Vat ly: ");
+    y=prompt("Nhap vao diem so mon Hoa hoc: ");
+    z=prompt("Nhap vao diem so mon Sinh hoc: ");
+
+    // Đổi sang kiểu Number
+    x=parseInt(x);
+    y=parseInt(y);
+    z=parseInt(z);
+
+    diemtrungbinh=(x+y+z)/3;
+    tong3mon=(x+y+z);
+    document.write("Diem so trung binh cua ba mon la: " +diemtrungbinh);
+    document.write("<br>");
+    document.write("Tong diem so cua ba mon la: " +tong3mon);
+</script>
+
+</body>
+</html>

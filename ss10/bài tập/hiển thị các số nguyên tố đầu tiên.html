@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label> Nhập số lượng số nguyên tố muốn </label>
+<br>
+<br>
+<input type="number" id="number">
+<br>
+<br>
+<button onclick="count()">Ok</button>
+<script>
+    function count() {
+        var numbers = parseInt(document.getElementById("number").value);
+        var count = 0;
+        var print = "";
+        var n =2;
+        while (count < numbers) {
+            var flag = true;
+            for (var i =2; i <= Math.sqrt(n); i++) {
+                if (flag) {
+                    if (n % i === 0) {
+                        flag = false;
+                    }
+                }
+            }
+            if (flag == true) {
+                count++;
+                print = print + n + " " ;
+            }
+            n++;
+        }
+        alert(print);
+    }
+
+</script>
+</body>
+</html>
