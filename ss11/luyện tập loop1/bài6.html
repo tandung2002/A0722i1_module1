@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var S=0;
+    var N=0;
+    var dem=1;
+    var i=1;
+    while (dem<30) {
+        N+=1;
+        i++;
+        if ( N%7 == 0) {
+            S+=N;
+            dem+=1;
+        }
+    } document.write("Tổng 30 số đầu tiên chia hết cho 7 là: "+ S);
+</script>
+</body>
+</html>
