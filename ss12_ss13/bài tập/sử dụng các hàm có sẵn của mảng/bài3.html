@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str = prompt("Nhập vào chuỗi muốn chuyển");
+    var str1 = str.toString();
+    var arr = [];
+    for (var i = 0;i < str1.length;i++) {
+        var x = str1[i];
+        var y = x.charCodeAt(x);
+        if (y >= 97 && y <= 122) {
+            x = x.toUpperCase();
+            arr.push(x);
+        } else if (y >= 65 && y <= 90) {
+            x = x.toLowerCase();
+            arr.push(x);
+        } else {
+            arr.push(x);
+        }
+    }
+    alert(arr.join(""));
+
+
+</script>
+</body>
+</html>

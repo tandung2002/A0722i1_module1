@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var number = prompt("Hãy nhập chuỗi số: ");
+    var str = number.toString();
+    var arr = [str[0]];
+    for (var i=1;i<str.length;i++) {
+        if (str[i-1]%2===0 && str[i]%2===0) {
+            arr.push("-",str[i]);
+        } else {
+            arr.push(str[i]);
+        }
+    }
+    alert(arr.join(""));
+
+</script>
+</body>
+</html>

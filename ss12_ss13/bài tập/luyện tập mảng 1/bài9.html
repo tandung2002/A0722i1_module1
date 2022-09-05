@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrA=[];
+    let arrB=[];
+    let i;
+    let arrC=[];
+    let a=parseInt(prompt("Nhập độ dài chuỗi số A "));
+    for (i=0;i<a;i++) {
+        arrA[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)+" mảng A"));
+    }
+    let b=parseInt(prompt("Nhập độ dài chuỗi số B "));
+    for (i=0;i<b;i++) {
+        arrB[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)+" mảng B"));
+    }
+    arrC=arrA.concat(arrB);
+    document.write(arrC);
+
+</script>
+</body>
+</html>

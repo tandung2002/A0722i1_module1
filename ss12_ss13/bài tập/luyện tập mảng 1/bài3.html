@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt("Nhập độ dài chuỗi số"));
+    let arr=[];
+    for (let i=0;i<a;i++) {
+        arr[i]=parseInt(prompt("Nhập số thứ "+i));
+    }
+    let max=arr[0];
+    for (let i=1;i<a;i++) {
+        if (arr[i]>max){
+            max=arr[i];
+        }
+    }
+    let s=0;
+    let tb="";
+    for (i=0;i<a;i++) {
+        s+=arr[i];
+    }
+    tb=s/arr.length;
+document.write("Giá trị lớn nhất là "+max+"và giá trị trung bình là"+tb);
+</script>
+</body>
+</html>

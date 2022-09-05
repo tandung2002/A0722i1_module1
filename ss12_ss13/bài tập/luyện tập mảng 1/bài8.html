@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt("Nhập độ dài chuỗi số"));
+    let arr=[];
+    let i;
+    for (i=0;i<a;i++) {
+        arr[i]=parseInt(prompt("Nhập phần tử thứ"+(i+1)));
+    }
+    for (i=0;i<arr.length-1;i++) {
+        for (let j=i+1;j<arr.length;j++) {
+            if (arr[i]<arr[j]) {
+                let b =arr[i];
+                arr[i]=arr[j];
+                arr[j]=b;
+            }
+        }
+    }
+    document.writeln(arr);
+</script>
+</body>
+</html>

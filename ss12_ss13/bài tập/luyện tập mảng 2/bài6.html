@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str=prompt("Hãy nhập một chuỗi: ");
+    let newStr="";
+    let i;
+    for (i=0;i<str.length;i++) {
+        if(str.charCodeAt(i)==45){
+            newStr+="_";
+        }
+        else{
+            newStr+=str[i];
+        }
+    }
+    document.write("Chuỗi chuyển đổi: "+newStr);
+</script>
+</body>
+</html>
