@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="checkNumber(parseInt(prompt('Nhập số thứ nhất')),(parseInt(prompt('Nhập số thứ hai'))),(parseInt(prompt('Nhập số thứ ba'))))">Click me</button>
+<script>
+    function checkNumber(number1,number2,number3) {
+        let max=number1;
+        if (number2>max) {
+            max=number2;
+        }
+        if (number3>max) {
+            max=number3;
+        }
+        document.write("Số lớn nhất là "+max);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="findStart(prompt('Nhập tên ngôi sao'))">Click me</button>
+<script>
+    function findStart(starName) {
+        let starts = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+        let constellations = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+        let index = -1;
+        for (let i = 0; i < 7; i++) {
+            if(starName == starts[i]){
+                index = i;
+                break;
+            }
+        }
+        if(index == -1){
+            document.write("Không tồn tại");
+        }
+        else{
+            document.write("Tên chòm sao là: "+constellations[index]);
+        }
+    }
+</script>
+</body>
+</html>

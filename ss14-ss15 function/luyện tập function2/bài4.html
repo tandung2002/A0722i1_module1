@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="check(prompt('Nhập vào'))">Click me</button>
+<script>
+    function check(number) {
+        let flag=true;
+        if (isNaN(number)) {
+            flag=false;
+        }
+        alert(flag);
+    }
+</script>
+</body>
+</html>

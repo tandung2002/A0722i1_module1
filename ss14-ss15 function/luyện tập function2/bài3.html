@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="factorial(parseInt(prompt('Nhập vào số')))">Click me</button>
+<script>
+    function factorial(number) {
+        let s=1;
+        for (let i=0;i<number;i++) {
+            s*=number;
+        }
+        document.write("Giai thừa của số "+number+" là "+s);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="checkNumber(parseInt(prompt('Nhập vào 1 số')))">Click me</button>
+<script>
+    function checkNumber(number) {
+        let flag;
+        if (number<0) {
+            flag = false;
+        } else {
+            flag=true;
+        }
+        alert(flag);
+    }
+</script>
+</body>
+</html>

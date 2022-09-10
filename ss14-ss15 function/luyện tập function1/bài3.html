@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="compareTwo(parseInt(prompt('Nhập số thứ nhất')),parseInt(prompt('Nhập số thứ hai')))">Click me</button>
+<script>
+    function compareTwo(number1,number2) {
+        if (number1>number2) {
+            document.write("Số thứ nhất lớn hơn số thứ hai");
+        } else {
+            let s=number1+number2;
+            document.write("Tổng hai số là "+s);
+        }
+    }
+</script>
+</body>
+</html>

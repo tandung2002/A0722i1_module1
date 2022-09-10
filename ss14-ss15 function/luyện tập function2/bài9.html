@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="checkArr(parseInt(prompt('Nhập độ dài chuỗi')))">Click me</button>
+<script>
+    function checkArr(number) {
+        let arr=[];
+        for (let i=0;i<number;i++) {
+            arr[i]=parseInt(prompt("Nhập số thứ "+(i+1)));
+        }
+        let checkNumber=parseInt(prompt("Nhập vào số cần kiểm tra"));
+        let count=-1;
+        for (let i=0;i<number;i++) {
+            if (checkNumber==arr[i]) {
+                count+=1;
+            }
+        }
+        document.write("Số lần xuất hiện của kí tự trong mảng là "+(count+1));
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="convert(parseInt(prompt('Nhập vào số thứ nhất')),(parseInt(prompt('Nhập vào số thứ hai'))))">Click me</button>
+<script>
+    function convert(number1,number2) {
+        document.write("Trước khi hoán đổi là "+number1+" và "+number2+"<br>");
+        let a=number1;
+        number1=number2;
+        number2=a;
+        document.write("Sau khi hoán đổi là "+number1+" và "+number2);
+    }
+</script>
+</body>
+</html>
