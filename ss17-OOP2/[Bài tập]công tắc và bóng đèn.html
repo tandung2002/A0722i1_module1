@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="bulb"></div>
+<button onclick="switchButton.switch()">Click to change the bulb's status</button>
+<script>
+    class Lamp {
+        constructor() {
+        }
+
+        turnOn() {
+            document.getElementById("bulb").innerHTML = '<img src="pic0.jpg" alt="This is a light-on bulb picture"/>';
+        }
+
+        turnOff() {
+            document.getElementById("bulb").innerHTML = '<img src="pic2.jpg" alt="This is a light-off bulb picture"/>';
+        }
+    }
+
+    class Button {
+        constructor() {
+            this.on = true;
+        }
+
+        switch() {
+            this.on = !this.on;
+            if (this.on) {
+                electricLamp.turnOn()
+            } else electricLamp.turnOff()
+
+        }
+
+
+    }
+
+    let electricLamp = new Lamp();
+    let switchButton = new Button();
+
+
+</script>
+</body>
+</html>
